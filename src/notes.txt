@@ -1,0 +1,35 @@
+In Java Script how fetching work ;
+
+
+
+const getFact = async() => {
+
+    const URL = " Link of the API "
+
+    console.log("getting data ....");
+
+    let response = await fetch(URL);
+    console.log(response);
+
+    let data = await response.json();
+    console.log(data[0].text)
+};
+
+
+
+Fetching Data in React
+
+useEffect(() => {
+   
+    const fetchMovie = async () => {
+    const response = await fetch("https://www.omdbapi.com/?apikey=5b2d9f01&s=inception&type=movie");
+
+
+     let data = await response.json();
+     console.log(data)
+
+   };
+
+   fetchMovie();
+
+ }, []); 
