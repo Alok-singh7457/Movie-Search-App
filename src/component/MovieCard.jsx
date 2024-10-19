@@ -1,10 +1,21 @@
-import React from 'react'
+
+import React, { useEffect } from 'react'
 
 const MovieCard = () => {
+
+  
+  
   return (
-    <div>
-i am movie card
-     </div>
+    <>
+            <div className="photo">
+                <div className="image">
+                  <img src="./image/alok2.jpg"  width='250px' loading='' />
+                </div>
+                <div className="title">Title</div>
+            </div>
+
+
+    </>
   )
 }
 
