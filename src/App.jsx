@@ -8,6 +8,8 @@ import Horror from './component/Horror';
 import Thriller from './component/Thriller';
 import NewMovie from './component/NewMovie';
 import ForYouMovie from './component/ForYouMovie';
+import SeeAll from './SeeAll';
+import SearchMovie from './component/SearchMovie';
 
 const App = () => {
   const router = createBrowserRouter([
@@ -74,6 +76,25 @@ const App = () => {
         </>
       ),
     },
+    {
+      path:'/seeAll',
+      element:(
+        <>
+          <Navbar />
+          <SeeAll />
+        </>
+      ),
+    },
+    ,
+    {
+      path:'/search',
+      element:(
+        <>
+          <Navbar />
+          <SearchMovie />
+        </>
+      ),
+    }
   ]);
 
   return (

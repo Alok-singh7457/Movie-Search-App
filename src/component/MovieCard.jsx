@@ -1,19 +1,23 @@
 
-import React, { useEffect } from 'react'
 
-const MovieCard = () => {
+const MovieCard = ({ poster }) => {
 
-  
-  
+
+
   return (
     <>
-            <div className="photo">
-                <div className="image">
-                  <img src="./image/alok2.jpg"  width='250px' loading='' />
-                </div>
-                <div className="title">Title</div>
-            </div>
+       <div className="Card">
+        <div className="box mt-4 ml-3 mb-3 h-[300px] w-[200px] border-2 rounded-lg">
+          {/* Movie Poster */}
+          <img 
+            src={poster} 
+           
+            className="h-full w-full object-cover rounded-lg"
+          />
 
+        
+        </div>
+      </div>
 
     </>
   )

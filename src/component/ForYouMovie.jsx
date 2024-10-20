@@ -2,8 +2,8 @@ import React from 'react'
 
 const ForYouMovie = () => {
   return (
-    <div>
-      this movie for you baby
+    <div className='text-3xl text-center pt-16'>
+      We are working on this is Page Baby
     </div>
   )
 }
